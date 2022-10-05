@@ -1,0 +1,49 @@
+
+body {
+    background-color: peru;
+}
+
+.container {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 1015px; /* please this needs to be de-hardcoded please */
+    margin: 0 auto;
+}
+
+header {
+    background-color: darkgreen;
+    height: 91px;
+
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+}
+
+nav {
+    background-color: crimson;
+    flex: 1;
+}
+
+main {
+    background-color: aquamarine;
+    flex: 3;
+}
+
+aside {
+    background-color: aqua;
+    flex: 1;
+}
+
+footer {
+    background-color: khaki;
+}
+
+
+/* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style */
+.list_check li {
+    list-style-image:url(images/check.png);
+}
