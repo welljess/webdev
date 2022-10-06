@@ -4,11 +4,15 @@ body {
     margin: 0;
 }
 
+*{
+  font-family:  Arial, Helvetica, sans serif;
+}
+
 .container {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 1015px; /* please this needs to be de-hardcoded please */
+    width: 70%; 
     margin: 0 auto;
 }
 
@@ -16,9 +20,9 @@ body {
     display: flex;
     flex: 1;
     flex-direction: row;
+    margin: 10px;
+    
 }
-
-
 
 header {
     height: 91px;
@@ -28,21 +32,36 @@ header {
 footer {
     background-color: #DE803C;
     text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: small;
 }
-
-
-
-
-
 
 h2, h3, h4, h5 {
     color: white;
     background-color: #B97A57;
+    letter-spacing:  1px;
+}
+
+h6 {
+  color: #ffe5da;
+  background-color: #b97a57;
+  font-size: x-large;
+  font-weight: lighter;
+  letter-spacing: 4px;
+}
+
+h7 {
+  color: orange;
+  background-color: white;
+  font-size: large;
 }
 
 h1 {
     color: white;
     background-color: #DE803C;
+    letter-spacing:  3px;
+    font-weight: lighter;
 }
 
 blockquote {
@@ -50,36 +69,44 @@ blockquote {
     color: white;
     background-color: #DE803C;
     font-family: TSCu_Comic;
+    font-size:  small;
     float: right;
+    padding: 8px;
 }
 
 img {
     float: left;
 }
 
-
-
 nav {
     flex: 1;
+    line-height: 200%;
+    font-size:  small;
+    text-align: left;
+    
 }
 
 main {
     flex: 3;
+    padding: 20px;
+    font-size: small;
+    color: gray;
 }
 
 aside {
     flex: 1;
 }
+
 aside q {
     color: #E8A574;
+    font-size: small;
 }
 
 aside h2, nav h2 {
     color: #5B5B5B;
     background-color: white;
+    font-weight: lighter;
 }
-
-
 
 nav a {
     color: #979797;
@@ -94,13 +121,6 @@ nav a:hover {
 nav ul {
     list-style: none;
 }
-
-
-
-
-
-
-
 
 /* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style */
 .list_check li {
