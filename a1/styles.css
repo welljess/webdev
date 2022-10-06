@@ -22,12 +22,13 @@ body {
     flex: 1;
     flex-direction: row;
     justify-content: space-around;
-    align-items: start;
+   
     margin: 20px;
 }
 
 header {
     height: 91px;
+   
 }
 
 footer {
@@ -102,6 +103,13 @@ blockquote {
 img {
     float: left;
     padding: 10px;
+}
+
+#tss {
+    height: 180px;
+    float: right;
+    margin: 0 0 0 15px;
+    padding: 5px 5px 5px 5px
 }
 
 nav {
