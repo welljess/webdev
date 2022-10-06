@@ -5,15 +5,17 @@ body {
 }
 
 *{
-  font-family:  Arial, Helvetica, sans serif;
+    font-family:  Helvetica, sans-serif;
+    color: #5b5b5b;
 }
 
+/*PAGE SECTION STYLING------------------------------------------------------------------------------------------*/
 .container {
     background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 75%; 
+    width: 1015px;
     margin: 0 auto;
 }
 
@@ -22,104 +24,29 @@ body {
     flex: 1;
     flex-direction: row;
     justify-content: space-around;
-    margin: 20px;
+    padding: 20px;
 }
 
 header {
     height: 91px;
-   }
+}
+
+section {
+    clear: both;
+}
 
 footer {
     background-color: #DE803C;
-    text-align: center;
-    text-transform: uppercase;
-    color: white;
-    font-size: 6pt;
-}
-
-h1 {
-    color: white;
-    background-color: #DE803C;
-    letter-spacing:  3px;
-    font-weight: lighter;
-}
-
-h2, h4, h5 {
-    color: white;
-    background-color: #B97A57;
-    letter-spacing:  2px;
-}
-
-h3{
-  color: white;
-  background-color: #ebb183;
-  letter-spacing:  1px;
-}
-
-h6 {
-  color: #ffe5da;
-  background-color: #b97a57;
-  font-size: x-large;
-  font-weight: lighter;
-  letter-spacing: 4px;
-}
-
-h7 {
-  color: orange;
-  background-color: white;
-  font-size: large;
-  letter-spacing: 1px;
-}
-
-h8 {
-  color: white;
-  background-color: #b97a57;
-  font-size: large;
-  letter-spacing: 2px;
-  padding: 0 300px 0 0; 
-}
-
-h9 {
-  color: white;
-  background-color: #b97a57;
-  font-size: medium;
-  letter-spacing: 1px;
-  padding: 0 400px 0 0;
-}
-
-
-blockquote {
-    width: 50%;
-    color: white;
-    background-color: #DE803C;
-    font-family: TSCu_Comic;
-    font-size:  small;
-    float: right;
-    padding: 8px;
-}
-
-img {
-    float: left;
-    padding: 10px;
-}
-
-#tss {
-    max-height: 25vh;
-    float: right;
-    margin: 0 0 0 15px;
-    padding: 5px 5px 5px 5px
+    padding: 4px;
 }
 
 nav {
     flex: 1;
-    line-height: 200%;
-    font-size:  small;
-    text-align: left;
 }
 
 main {
     flex: 3;
-    padding: 20px;
+    padding-right: 30px;
     font-size: small;
     color: gray;
 }
@@ -127,26 +54,90 @@ main {
 aside {
     flex: 1;
     justify-content: space-between;
-    
+
 }
 
-aside q {
-    color: #E8A574;
-    font-size: small;
+
+
+
+/*TEXT STYLING------------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6{
+    font-family: Calibri;
+    font-weight: lighter;
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 30px;
+    letter-spacing:  4px;
 }
 
-aside h2, nav h2 {
+.coachesHeader {
+    color: #f8d6b9;
+    background-color: #b97a57;
+    letter-spacing:  3px;
+    font-size: 32pt;
+    line-height: 32pt;
+}
+
+.coachesSmallHeader {
+    color: #DE803C;
+    background-color: white;
+    font-size: 18pt;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.navHeaders {
     color: #5B5B5B;
     background-color: white;
+    font-size: 24pt;
     font-weight: lighter;
 }
-section {
-    clear: both;
+
+.indexHeader {
+    color: white;
+    background-color: #DE803C;
+    font-weight: lighter;
+    font-size: 27pt;
+    line-height: 28pt;
+}
+
+.indexSmallHeader {
+    font-size: 20pt;
+    line-height: 22pt;
+    background-color: #ebb183;
+    letter-spacing:  1px;
+}
+
+.normalHeader {
+    color: white;
+    background-color: #b97a57;
+    font-size: 27pt;
+    line-height: 28pt;
+}
+
+.normalSmallHeader {
+    font-size: 20pt;
+    line-height: 22pt;
+    background-color: #b97a57;
+    letter-spacing: 1px;
+}
+
+blockquote {
+    width: 50%;
+    color: white;
+    background-color: #DE803C;
+    font-family: LDFComicSans, sans-serif;
+    font-weight: lighter;
+    font-size:  10pt;
+    line-height: 14pt;
+    float: right;
+    padding: 12px;
 }
 
 nav a {
     color: #979797;
     text-decoration: none;
+    font-size:  small;
 }
 
 nav a:hover {
@@ -156,6 +147,48 @@ nav a:hover {
 
 nav ul {
     list-style: none;
+    padding-left: 0;
+    line-height: 16pt;
+}
+
+main p {
+    font-size: 11pt;
+    line-height: 16pt;
+    margin-top: 11px;
+}
+
+
+aside q {
+    color: #E8A574;
+    font-size: small;
+}
+
+footer p {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 7.5pt;
+}
+
+
+
+
+
+/* IMAGE STYLING----------------------------------------------------------*/
+.imgfloatright {
+    float: right;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.imgfloatleft {
+    float: left;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+.bulletimage {
+    margin-right: 4px;
 }
 
 /* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style */
