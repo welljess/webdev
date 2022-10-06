@@ -122,7 +122,7 @@ nav ul {
     list-style: none;
 }
 
-/* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style */
+/* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style .. */
 .list_check li {
     list-style-image:url(images/check.png);
 }
