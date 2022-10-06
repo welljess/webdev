@@ -101,6 +101,7 @@ blockquote {
 
 img {
     float: left;
+    padding: 10px;
 }
 
 nav {
