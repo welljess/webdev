@@ -141,7 +141,7 @@ aside h2, nav h2 {
     font-weight: lighter;
 }
 section {
-    clear: left;
+    clear: both;
 }
 
 nav a {
