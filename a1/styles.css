@@ -20,13 +20,12 @@ body {
     display: flex;
     flex: 1;
     flex-direction: row;
-    margin: 10px;
+    margin: 1px;
     
 }
 
 header {
     height: 91px;
-
 }
 
 footer {
@@ -34,7 +33,14 @@ footer {
     text-align: center;
     text-transform: uppercase;
     color: white;
-    font-size: small;
+    font-size: 6pt;
+}
+
+h1 {
+    color: white;
+    background-color: #DE803C;
+    letter-spacing:  3px;
+    font-weight: lighter;
 }
 
 h2, h3, h4, h5 {
@@ -57,12 +63,21 @@ h7 {
   font-size: large;
 }
 
-h1 {
-    color: white;
-    background-color: #DE803C;
-    letter-spacing:  3px;
-    font-weight: lighter;
+h8 {
+  color: white;
+  background-color: #b97a57;
+  font-size: large;
+  letter-spacing: 2px;
+  padding: 0px 270px 0px 0px; 
 }
+
+h9 {
+  color: white;
+  background-color: #b97a57;
+  font-size: medium;
+  padding: 0px 385px 0px 0px;
+}
+
 
 blockquote {
     width: 50%;
@@ -107,6 +122,9 @@ aside h2, nav h2 {
     background-color: white;
     font-weight: lighter;
 }
+section {
+    clear: left;
+}
 
 nav a {
     color: #979797;
@@ -122,7 +140,7 @@ nav ul {
     list-style: none;
 }
 
-/* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style .. */
+/* This is for the bullet lists on the coaches page that use check.png rather than a normal bullet style */
 .list_check li {
     list-style-image:url(images/check.png);
 }
