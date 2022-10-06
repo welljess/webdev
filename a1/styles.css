@@ -12,7 +12,8 @@ body {
     background-color: white;
     display: flex;
     flex-direction: column;
-    width: 70%; 
+    justify-content: space-between;
+    width: 75%; 
     margin: 0 auto;
 }
 
@@ -20,8 +21,9 @@ body {
     display: flex;
     flex: 1;
     flex-direction: row;
-    margin: 1px;
-    
+    justify-content: space-around;
+    align-items: start;
+    margin: 20px;
 }
 
 header {
@@ -43,10 +45,16 @@ h1 {
     font-weight: lighter;
 }
 
-h2, h3, h4, h5 {
+h2, h4, h5 {
     color: white;
     background-color: #B97A57;
     letter-spacing:  1px;
+}
+
+h3{
+  color: white;
+  background-color: #ebb183;
+  letter-spacing:  1px;
 }
 
 h6 {
@@ -61,6 +69,7 @@ h7 {
   color: orange;
   background-color: white;
   font-size: large;
+  letter-spacing: 1px;
 }
 
 h8 {
@@ -68,14 +77,15 @@ h8 {
   background-color: #b97a57;
   font-size: large;
   letter-spacing: 2px;
-  padding: 0px 270px 0px 0px; 
+  padding: 0 300px 0 0; 
 }
 
 h9 {
   color: white;
   background-color: #b97a57;
   font-size: medium;
-  padding: 0px 385px 0px 0px;
+  letter-spacing: 1px;
+  padding: 0 400px 0 0;
 }
 
 
@@ -110,6 +120,8 @@ main {
 
 aside {
     flex: 1;
+    justify-content: space-between;
+    
 }
 
 aside q {
