@@ -1,35 +1,27 @@
-public class Book{
+package com.cccs425.a1;
 
-private int id;
-private String title;
-private Date date;
+import java.util.Date;
+import java.util.Map;
 
-public Book (int id, String title, Date date){
-
-public int getId(){return this.id;}
-public String getTitle(){return this.title;}
-public date getDate(){return this.Date;}
-public void setId(int id){this.id = id;}
-public void setTitle(String title){this.title = title;}
-public void setDate(date date){this.date = date;} 
-}
-}
-
-public class BookList{
-
-Map<Integer, Book> library = new HashMap<Integer, Book>();
-
-Book b1 = new Book(1, "Dr. Zhivago", January 1, 1967);
-
-
-library.put(b1);
-
-for(Map.Entry<Integer, Book> entry:library.entrySet()){
-int key = entry.getKey();
-Book b = entry.getValue();
-System.out.println(key + "book details: ";
-System.out.println(b.id+" " +b.title+" " + b.date + " ");
-}
-}
-}
+public class Book {
+    private int id;
+    private String title;
+    private Date date;
+    
+    public Book (int id, String title, Date date){
+        
+        public int getId(){return this.id;}
+        public void setId(int id){this.id = id;}
+        public String getTitle(){return this.title;}
+        public void setTitle(String title){this.title = title;}
+        public Date getDate(){return this.date;}
+        public void setDate(Date date){this.date = date;}
+        
+        @Override
+        public String toString(){
+            return id+" "+title+" "+date;
+        }
+        
+    }
+    
 
