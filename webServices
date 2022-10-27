@@ -8,7 +8,7 @@ public class Book {
     private String title;
     private Date date;
     
-    public Book (int id, String title, Date date){
+    public Book (){}
         
         public int getId(){return this.id;}
         public void setId(int id){this.id = id;}
