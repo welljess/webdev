@@ -1,0 +1,51 @@
+
+package com.cccs425.a1;
+
+import java.util.HashMap;
+
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.UriInfo;
+import javax.ws.rs.Consumes;
+import javax.ws.rs.Produces;
+import javax.ws.rs.GET;
+import javax.ws.rs.POST;
+import javax.ws.rs.Path;
+import javax.ws.rs.QueryParam;
+
+import javax.ws.rs.core.MediaType;
+
+@Path("/booksrepository")
+public class BooksService {
+
+    @Context
+    private UriInfo context;
+
+  
+    public BooksService() {
+    }
+    
+    HashMap<Integer, Book> library = new HashMap<>();
+
+    @GET
+    @Path("/getbooks")
+    @Produces(MediaType.TEXT_PLAIN)
+    public HashMap getBooks() {
+        return library;
+        
+      }
+
+    @POST
+    @Path("/addbook")
+    @Consumes(MediaType.TEXT_PLAIN)
+    public void addBook() {
+        
+        Book b1 = new Book(100, "Dr.Zhivago" );
+        Book b2 = new Book(200,"Of Mice and Men");
+        
+        library.put(1, b1);
+        library.put(2, b2);
+        
+        System.out.println("Successfully added records");
+    
+    }
+}
