@@ -9,6 +9,7 @@
 
 <body>
     <div class="container">
+         <!--The header and nav sections have the same behaviour across pages-->
         <header>
             <h1>Advancing Technology</h1>
             <h4>A Look into the Future</h4>
@@ -17,7 +18,7 @@
         <div class="content">
             <nav>
                 <h2 class="links"></h2>
-
+                   
                 <a href="index.html">Home</a>
                 <a href="ai.html">AI</a>
                 <a href="dl.html">Deep Learning</a>
@@ -28,13 +29,16 @@
             </nav>
 
             <main>
-                <section id="index-images">
+                <div class="index-images">
+                    <!--these images will change depending on screen size-->
                     <p>
+                        <img src="images\machine-learning.jpg" alt="home image">
+                        <img src="images\tech-banner.png" alt="home image">
                         <img src="images\human-profile-technology.png" alt="home image">
                     </p>
                 </div>
 
-                <section id="index-text">
+                <div class="index-text">
 
                     <p>What is Artificial Intelligence (AI)? How will deep learning impact future developers? How will
                         unmanned vehicles change the transportation industry? How will nanotechnology improve our
