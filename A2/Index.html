@@ -10,7 +10,7 @@
 
 <body>
     <div class="container">
-        <!--The header and nav sections have the same behaviour across pages-->
+        
         <header>
             <h1>Advancing Technology</h1>
             <h4>A Look into the Future</h4>
@@ -30,11 +30,13 @@
             <main>
                 <div class="images">
                     <!--these images will change depending on screen size-->
-                    <p>
-                        <img src="images\machine-learning.jpg" alt="home image">
-                        <img src="images\tech-banner.png" alt="home image">
-                        <img src="images\human-profile-technology.png" alt="home image">
-                    </p>
+                    <picture>
+                        <source srcset="images/machine-learning.jpg" media="(min-width: 640px)">
+                        <source srcset="images/tech-banner.png" media="(min-width: 768px)">
+                        <source srcset="images/human-profile-technology.png" media="(min-width: 1024px)">
+                        <img src="images/machine-learning.jpg" alt="Home image">
+                    </picture>
+
                 </div>
 
                 <div class="text">
@@ -49,6 +51,7 @@
 
 
                 </div>
+
             </main>
 
             <footer id="footer">
@@ -57,6 +60,7 @@
             </footer>
 
         </div>
+    </div>
 </body>
 
 </html>
