@@ -5,53 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="layout.css" media="screen">
 </head>
 
 <body>
+    <header class="headerFloat desktop">
+        <h1>Advancing Technology</h1>
+        <h4>A Look into the Future</h4>
+    </header>
+
     <div class="container">
         
-        <header>
+        <header class="headerBlock tablet mobile">
             <h1>Advancing Technology</h1>
             <h4>A Look into the Future</h4>
         </header>
 
         <div class="content">
             <nav>
-                <a href="index.html">Home</a>
-                <a href="ai.html">AI</a>
-                <a href="dl.html">Deep Learning</a>
-                <a href="nano.html">Nanotechnology</a>
-                <a href="uv.html">Unmanned Vehicles</a>
-                <a href="insight.html">Insight</a>
-
+                <ul class="navbar"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="AI.html">AI</a></li>
+                    <li><a href="DL.html">Deep Learning</a></li>
+                    <li><a href="Nano.html">Nanotechnology</a></li>
+                    <li><a href="UV.html">Unmanned Vehicles</a></li>
+                    <li><a href="Insight.html">Insight</a></li>
+                </ul>
             </nav>
 
             <main>
                 <div class="images">
                     <!--these images will change depending on screen size-->
-                    <picture>
-                        <source srcset="images/machine-learning.jpg" media="(min-width: 640px)">
-                        <source srcset="images/tech-banner.png" media="(min-width: 768px)">
-                        <source srcset="images/human-profile-technology.png" media="(min-width: 1024px)">
+                    <picture><!-- TODO find a way to use the rules for mobile/tablet/desktop instead of raw sizes -->
+                        <source srcset="images/machine-learning.jpg" media="(max-width: 480px)">
+                        <source srcset="images/human-profile-technology.png" media="(max-width: 1024px)">
+                        <source srcset="images/tech-banner.png" media="(min-width: 1025px)">
                         <img src="images/machine-learning.jpg" alt="Home image">
                     </picture>
-
                 </div>
 
-                <div class="text">
-
-                    <p>What is Artificial Intelligence (AI)? How will deep learning impact future developers? How will
-                        unmanned vehicles change the transportation industry? How will nanotechnology improve our
-                        future? </p>
-                    <p> These are all great questions. Questions that we will explore and uncover trends in this
-                        website.</p>
-                    <p> This website was created to provide an overview of these technologies and a hypothesis about
-                        FUTURE TECHNOLOGIES. </p>
-
-
-                </div>
-
+                <!-- Removed the text divs because they were interfering with the flex-layout in the tablet diagram
+                this hurts me -->
+                <p>
+                    What is Artificial Intelligence (AI)? How will deep learning impact future developers? How will
+                    unmanned vehicles change the transportation industry? How will nanotechnology improve our
+                    future?
+                </p>
+                    <hr class="desktop mobile">
+                <p>
+                    These are all great questions. Questions that we will explore and uncover in this
+                    website.
+                </p>
+                    <hr class="desktop mobile">
+                <p>
+                    This website was created to provide an overview of these technologies and a hypothesis about
+                    FUTURE TECHNOLOGIES.
+                </p>
             </main>
 
             <footer id="footer">
