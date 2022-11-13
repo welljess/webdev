@@ -43,6 +43,11 @@
         border: 2px solid black;
     }
 
+    /* LISTS */
+    ul {
+        padding-left: 64px;
+        list-style: none;
+    }
 
 /* NAVBAR */
     .navbarBlock, .navbarFloat {
@@ -58,6 +63,8 @@
         font-weight: bold;
         text-decoration: none;
     }
+
+
 
 /* HEADER/FOOTER */
     header {

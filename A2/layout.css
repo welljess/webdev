@@ -63,6 +63,10 @@
         width: 100%;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        margin: 16px;
+    }
+
 
 
 
@@ -110,14 +114,12 @@
 
     /* FIGURES (only for the UV page) */
     figure {
-        float: right;
+        flex-basis: 50%;
+        width: 100%;
     }
 
     figure > img {
-        float: right;
-    }
-
-    figure > figcaption {
+        width: 100%;
     }
 }
 
@@ -165,7 +167,6 @@
         flex-direction: row;
 
     }
-
 
     /* FIGURES (only for the UV page) */
     figure {
