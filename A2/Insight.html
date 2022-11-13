@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insight</title>
     <link rel="stylesheet" type="text/css" href="layout.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="aesthetic.css" media="screen">
 </head>
 
 <body>
@@ -13,6 +14,17 @@
         <h1>Advancing Technology</h1>
         <h4>A Look into the Future</h4>
     </header>
+
+    <nav>
+        <ul class="navbarFloat desktop"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AI.html">AI</a></li>
+            <li><a href="DL.html">Deep Learning</a></li>
+            <li><a href="Nano.html">Nanotechnology</a></li>
+            <li><a href="UV.html">Unmanned Vehicles</a></li>
+            <li><a href="Insight.html">Insight</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         
@@ -23,7 +35,7 @@
 
         <div class="content">
             <nav>
-                <ul class="navbar"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+                <ul class="navbarBlock tablet mobile"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="AI.html">AI</a></li>
                     <li><a href="DL.html">Deep Learning</a></li>
@@ -34,18 +46,19 @@
             </nav>
 
             <main>
-                <div class="text">
-                <p>
-                <h4>Complete the form below to join our email list and stay current with the latest trends in
-                    technology.</h4>
-                </p>
+                <div class="box">
+                    <p>
+                    <h4>Complete the form below to join our email list and stay current with the latest trends in
+                        technology.</h4>
+                    </p>
                 </div>
                
                 <!-- TODO fix this form's borders + layout-->
-                <div class="form">
+                
+                <div class="box form">
                     <form>
                         <fieldset>
-                            <legend>Your Information</legend>
+                            <legend><h3>Your Information</h3></legend>
                             <label for="fname">First Name:</label><br>
                             <input type="text" id="fname" name="fname"><br><br>
                             <label for="lname">Last Name:</label><br>
@@ -58,11 +71,11 @@
                     <br>
                 </div>
 
-                <div class="checkbox">
+                <div class="box form">
 
                     <form>
                         <fieldset>
-                            <legend>Fields of Interest</legend>
+                            <legend><h3>Fields of Interest</h3></legend>
                             <p>I am interested in learning more about:</p>
                             <input type="checkbox" id="artificial" name="artificial">
                             <label for="artificial">Artificial Intelligence</label><br><br>
@@ -79,41 +92,37 @@
                     </form>
                 </div>
 
-                <div class="mailing-list">
+                <div class="box form">
                     <form>
                         <fieldset>
-                            <legend>Mailing List Preferences</legend>
+                            <legend><h3>Mailing List Preferences</h3></legend>
                             <br>How often would you like to receive emails from us?<br>
                             <select id="preferences" name="preferences">
                                 <option value="daily">Daily</option>
                                 <option value="weekly">Weekly</option>
                                 <option value="never">Never</option>
                             </select>
-
                             <br>
-
-                            <br>Questions?<br>
-                            <textarea name="questions" rows="10" cols="50">
-                            </textarea>
-
-                            <br>
-
                         </fieldset>
-
                     </form>
-
                 </div>
 
-                <div class="submit">
-
+                <div class="box form">
+                    <br>Questions?<br>
+                    <textarea name="questions" rows="10" cols="40">Type here...</textarea>
+                    <br>
                     <p><input type="submit" value="Submit"></p>
+                </div>
+
+                <div class="box form">
+                    
                 </div>
 
             </main>
 
             <footer id="footer">
                 <p>Copyright 2012. All rights Reserved.</p>
-                <p> contact@advatech.net </p>
+                <p>contact@advatech.net</p>
             </footer>
 
         </div>

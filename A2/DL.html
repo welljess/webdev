@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DL</title>
     <link rel="stylesheet" type="text/css" href="layout.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="aesthetic.css" media="screen">
 </head>
 
 <body>
@@ -13,6 +14,17 @@
         <h1>Advancing Technology</h1>
         <h4>A Look into the Future</h4>
     </header>
+
+    <nav>
+        <ul class="navbarFloat desktop"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AI.html">AI</a></li>
+            <li><a href="DL.html">Deep Learning</a></li>
+            <li><a href="Nano.html">Nanotechnology</a></li>
+            <li><a href="UV.html">Unmanned Vehicles</a></li>
+            <li><a href="Insight.html">Insight</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         
@@ -23,7 +35,7 @@
 
         <div class="content">
             <nav>
-                <ul class="navbar"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+                <ul class="navbarBlock tablet mobile"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="AI.html">AI</a></li>
                     <li><a href="DL.html">Deep Learning</a></li>
@@ -34,29 +46,28 @@
             </nav>
 
             <main>
-                <!-- <div class="text"> -->
-                <h3>What is Deep Learning?</h3>
-
-                <p>
-                    Deep Learning is a machine learning technique where a computer learns by example. The results can
-                    exceed human performance. The computer continually learns using data and algorithms. An example
-                    of how deep learning works is available at <a href="https://www.mathworks.com/">mathworks.com.</a>
-                </p>
+                <div class="box">
+                    <h2>What is Deep Learning?</h2>
+                    <p>
+                        Deep Learning is a machine learning technique where a computer learns by example. The results can
+                        exceed human performance. The computer continually learns using data and algorithms. An example
+                        of how deep learning works is available at <a href="https://www.mathworks.com/">mathworks.com.</a>
+                    </p>
+                </div>
                     <hr class="desktop mobile">
-                <p>
-                    We generate an estimated 2.6 quintillion bytes of data every day. Deep learning uses this data
-                    and algorithms to learn. This allows machines to solve complex problems, such as facial
-                    recognition, medicine, shopping, and entertainment. See more deep learning examples at
-                    <a href="https://www.forbes.com">Forbes.com.</a>
-                </p>
-
-
-                <!-- </div> -->
+                <div class="box">
+                    <p>
+                        We generate an estimated 2.6 quintillion bytes of data every day. Deep learning uses this data
+                        and algorithms to learn. This allows machines to solve complex problems, such as facial
+                        recognition, medicine, shopping, and entertainment. See more deep learning examples at
+                        <a href="https://www.forbes.com">Forbes.com.</a>
+                    </p>
+                </div>
             </main>
 
             <footer id="footer">
                 <p>Copyright 2012. All rights Reserved.</p>
-                <P> contact@advatech.net </p>
+                <p>contact@advatech.net</p>
 
             </footer>
 

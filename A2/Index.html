@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="layout.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="aesthetic.css" media="screen">
 </head>
 
 <body>
@@ -14,6 +15,17 @@
         <h4>A Look into the Future</h4>
     </header>
 
+    <nav>
+        <ul class="navbarFloat desktop"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AI.html">AI</a></li>
+            <li><a href="DL.html">Deep Learning</a></li>
+            <li><a href="Nano.html">Nanotechnology</a></li>
+            <li><a href="UV.html">Unmanned Vehicles</a></li>
+            <li><a href="Insight.html">Insight</a></li>
+        </ul>
+    </nav>
+
     <div class="container">
         
         <header class="headerBlock tablet mobile">
@@ -21,9 +33,11 @@
             <h4>A Look into the Future</h4>
         </header>
 
+
+
         <div class="content">
             <nav>
-                <ul class="navbar"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+                <ul class="navbarBlock tablet mobile"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="AI.html">AI</a></li>
                     <li><a href="DL.html">Deep Learning</a></li>
@@ -34,7 +48,7 @@
             </nav>
 
             <main>
-                <div class="images">
+                <div class="box">
                     <!--these images will change depending on screen size-->
                     <picture><!-- TODO find a way to use the rules for mobile/tablet/desktop instead of raw sizes -->
                         <source srcset="images/machine-learning.jpg" media="(max-width: 480px)">
@@ -46,21 +60,31 @@
 
                 <!-- Removed the text divs because they were interfering with the flex-layout in the tablet diagram
                 this hurts me -->
-                <p>
-                    What is Artificial Intelligence (AI)? How will deep learning impact future developers? How will
-                    unmanned vehicles change the transportation industry? How will nanotechnology improve our
-                    future?
-                </p>
-                    <hr class="desktop mobile">
-                <p>
-                    These are all great questions. Questions that we will explore and uncover in this
-                    website.
-                </p>
-                    <hr class="desktop mobile">
-                <p>
-                    This website was created to provide an overview of these technologies and a hypothesis about
-                    FUTURE TECHNOLOGIES.
-                </p>
+                <div class="box">
+                    <p>
+                        What is Artificial Intelligence (AI)? How will deep learning impact future developers? How will
+                        unmanned vehicles change the transportation industry? How will nanotechnology improve our
+                        future?
+                    </p>
+                </div>
+
+                <hr class="desktop mobile">
+
+                <div class="box">
+                    <p>
+                        These are all great questions. Questions that we will explore and uncover in this
+                        website.
+                    </p>
+                </div>
+                
+                <hr class="desktop mobile">
+
+                <div class="box">
+                    <p>
+                        This website was created to provide an overview of these technologies and a hypothesis about
+                        FUTURE TECHNOLOGIES.
+                    </p>
+                </div>
             </main>
 
             <footer id="footer">

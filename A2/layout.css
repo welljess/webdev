@@ -1,0 +1,235 @@
+/* MARGINS/PADDING */
+
+
+/* BASE LAYOUT RULES */
+
+    /* MAIN DIVS */
+    * {
+        margin: 0px;
+        padding: 0px;
+    }    
+
+    .container {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .box {
+        padding: 16px;
+    }
+
+    .navbarBlock, .navbarFloat, header, footer {
+        text-align: center;
+        padding: 4px;
+    }
+
+    /* HEADERS */
+    .headerFloat, .headerBlock {
+        margin: 8px auto;
+        padding: 8px;
+    }
+
+    .headerFloat {
+        width: fit-content;
+        margin-top: 32px;
+    }
+
+    .headerBlock {
+        margin: 0 auto;
+
+    }
+
+
+
+    /* NAVBAR */
+    .navbarFloat, .navbarBlock {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px;
+    }
+
+    .navbarFloat {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    /* TEXT BREAKS */
+    hr {
+        margin: 8px;
+    }
+
+    /* IMAGES */
+    picture > img {
+        width: 100%;
+    }
+
+
+
+
+
+/* DESKTOP */
+@media screen and (min-width: 1025px) {
+        
+    /* The following three rules let you show/hide elements based on the current layout
+    You can define more than one per element if you like */
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+
+
+    /* DIVS */
+    .headerBlock {
+        display: none;
+    }
+
+    .navbarBlock {
+        display: none;
+    }
+
+    .navbarFloat {
+        display: flex;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box {
+        flex-basis: 100%;
+    }
+
+    /* FIGURES (only for the UV page) */
+    figure {
+        float: right;
+    }
+
+    figure > img {
+        float: right;
+    }
+
+    figure > figcaption {
+    }
+}
+
+
+
+/* TABLET */
+@media screen and (max-width: 1024px) {
+
+    /* The following three rules let you show/hide elements based on the current layout
+    You can define more than one per element if you like */
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+
+    /* DIVS */
+    .headerFloat {
+        display: none;
+    }
+
+    .navbarFloat {
+        display: none;
+    }
+
+    .navbarBlock {
+        display: flex;
+    }
+
+    .box {
+        padding: 12px;
+        flex-basis: 50%;
+        box-sizing: border-box;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+
+
+    /* FIGURES (only for the UV page) */
+    figure {
+        flex-basis: 50%;
+        width: 100%;
+    }
+
+    figure > img {
+        width: 100%;
+    }
+} 
+
+
+
+/* MOBILE */
+@media screen and (max-width: 480px) {
+    .desktop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+    .headerFloat {
+        display: none;
+    }
+
+    .navbarFloat {
+        display: none;
+    }
+
+    .navbarBlock {
+        display: block;
+    }
+    
+    .navbarBlock > li {
+        flex-basis: 100%;
+    }
+
+    picture > img {
+        width: 100%;
+    }
+
+    .headerBlock {
+        display: block;
+    }
+
+    .headerFloat {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    main > p {
+        flex-basis: 100%;
+    }
+}
+

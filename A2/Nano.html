@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nano</title>
     <link rel="stylesheet" type="text/css" href="layout.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="aesthetic.css" media="screen">
 </head>
 
 <body>
@@ -13,6 +14,17 @@
         <h1>Advancing Technology</h1>
         <h4>A Look into the Future</h4>
     </header>
+
+    <nav>
+        <ul class="navbarFloat desktop"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+            <li><a href="Index.html">Home</a></li>
+            <li><a href="AI.html">AI</a></li>
+            <li><a href="DL.html">Deep Learning</a></li>
+            <li><a href="Nano.html">Nanotechnology</a></li>
+            <li><a href="UV.html">Unmanned Vehicles</a></li>
+            <li><a href="Insight.html">Insight</a></li>
+        </ul>
+    </nav>
 
     <div class="container">
         
@@ -23,7 +35,7 @@
 
         <div class="content">
             <nav>
-                <ul class="navbar"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
+                <ul class="navbarBlock tablet mobile"> <!--had to wrap these in a ul so they'd behave nicely as flexboxes-->
                     <li><a href="Index.html">Home</a></li>
                     <li><a href="AI.html">AI</a></li>
                     <li><a href="DL.html">Deep Learning</a></li>
@@ -35,27 +47,24 @@
 
             <main>
                 <!--This section will only appear on mobile devices-->
-                <div class="text mobile">
-                    <h3>Nanotechnology</h3>
-
+                <div class="box text mobile">
+                    <h2>Nanotechnology</h2>
                     <p>
                         Defining nanotechnology can be difficult as its meaning is different depending upon the industry.
                         The dictionary definition is the manipulation of particles at the molecular level.
                     </p>
-                        <hr class="desktop mobile">
+                        <hr class="mobile">
                     <p>
                         Nantechnology has many applications. In the medical field, it is studied to improve the quality
                         of healthcare and prescription drugs. In the electonic field, it involves improving machines to
                         make them last longer. Nanotechnology is also applied towards improving air quality and water
                         quality.
                     </p>
-
-
                 </div>
-                <!-- TODO: Stop this from bleeding off the edge of the container when on the lower end of the tablet screen size-->
+
                 <!--This section will only appear on tablet and desktop-->
                 <div class="table tablet desktop">
-                    <h5>Uses for Nanotechnology</h5>
+                    <h2>Uses for Nanotechnology</h2>
                     <table>
                         <tr>
                             <th>Industry</th>
@@ -114,7 +123,7 @@
 
             <footer id="footer">
                 <p>Copyright 2012. All rights Reserved.</p>
-                <P> contact@advatech.net </p>
+                <p>contact@advatech.net</p>
 
             </footer>
 
